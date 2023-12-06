@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WanderEjerRepaso.Views.WF_Conteo"
+             Title="WF_Conteo">
+    <FlexLayout Direction="Column" JustifyContent="End" AlignItems="Center">
+        <StackLayout>
+            <Grid FlexLayout.Order="2" ColumnDefinitions="*,*" ColumnSpacing="4">
+                <Button Text="Save" />
+                <Button Grid.Column="1" Text="Delete" />
+            </Grid>
+
+            <Editor x:Name="TextEditor"
+            Placeholder="Enter your note"
+            Text="{Binding Text}"
+            HeightRequest="100" />
+            <Label Text="Mayúsculas: 3" />
+            <Label Text="Numeros: 3" />
+            <Label Text="Minúsculas: 12" />
+            <Label Text="Letras: 15" />
+            <Label Text="Vocales: 8" />
+            <Label Text="Total: 22" />
+
+
+        </StackLayout>
+    </FlexLayout>
+
+
+
+</ContentPage>
